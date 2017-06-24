@@ -1,0 +1,30 @@
+<div layout:decorate="~{layouts/general}" layout:fragment="content" xmlns:th="http://www.thymeleaf.org">
+    <h3>Список Ваших сайтов</h3><br/>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Название</th>
+                <th>Api ключ</th>
+                <th>Дата создания</th>
+                <th>Дата обновления</th>
+                <th>Количество запросов по этому сайту</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="site : ${sites}">
+                <td th:text="${site.name}"></td>
+                <td>
+                    <button type="button" class="btn btn-default btn-rounded show-api-key"
+                            th:attr="data-api-key=${site.apiKey}"
+                            data-showed="false">Показать</button>
+                </td>
+                <td th:text="${#temporals.format(site.createdAt, 'dd.MM.yyyy г. H:m:s')}"></td>
+                <td th:text="${site.updatedAt}"></td>
+                <td>
+                    <span th:text="${site.requestsCount}"></span>
+                    (<a href="#" th:href="@{/requests(siteId=${site.id})}">Просмотреть</a>)
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

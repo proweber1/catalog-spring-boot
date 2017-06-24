@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head></head>
+<body>
+<div class="main-container" th:replace="aside">
+    <!-- Main Sidebar start-->
+    <aside class="main-sidebar mCustomScrollbar mcs-sm" data-mcs-theme="minimal-dark">
+        <div class="main-sidebar-header d-flex flex-column align-items-center mt-10">
+            <div class="easy-pie-chart" id="user-profile" data-percent="69" style="height: 80px; width: 80px; line-height: 100%; padding: 8px;"><img class="rounded-circle" src="../build/images/users/05.png" alt="" width="64"></div><a class="username mt-2 mb-4" data-toggle="collapse" href="#user-collapse" aria-expanded="false" aria-controls="user-collapse">
+            <h6 class="lh-1 mb-0 d-inline-block mr-2">Joseph Larson</h6><i class="ti-angle-down d-inline-block"></i></a>
+            <ul class="user-collapse collapse list-unstyled w-100 mb-0" id="user-collapse">
+                <li><a href="javascript:void(0);"><i class="ti-user"></i>Profile</a></li>
+                <li><a href="javascript:void(0);"><i class="ti-settings"></i>Settings</a></li>
+                <li><a href="javascript:void(0);"><i class="ti-power-off"></i>Logout</a></li>
+            </ul>
+        </div>
+        <ul class="navigation mb-0">
+            <li class="nav-link-category">Main</li>
+            <li class="card">
+                <a href="#" th:href="@{/}"
+                   th:classappend="${#httpServletRequest.getRequestURI() == '/' ? 'active' : ''}">
+                    <i class="ti-home"></i><span class="nav-link-title">Dashboard</span>
+                </a>
+            </li>
+            <li class="card">
+                <a href="#" th:href="@{/sites}"
+                   th:classappend="${#httpServletRequest.getRequestURI() == '/sites' ? 'active' : ''}">
+                    <i class="ti-layers"></i><span class="nav-link-title">Сайты</span>
+                </a>
+            </li>
+            <li class="card">
+                <a href="#" th:href="@{/requests}"
+                   th:classappend="${#httpServletRequest.getRequestURI() == '/requests' ? 'active' : ''}">
+                    <i class="ti-user"></i><span class="nav-link-title">Заявки с сайта</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <!-- Main Sidebar end-->
+</div>
+</body>
+</html>

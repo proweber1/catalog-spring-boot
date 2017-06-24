@@ -1,0 +1,23 @@
+<div layout:decorate="~{layouts/general}" layout:fragment="content" xmlns:th="http://www.thymeleaf.org">
+    <h3>Заявки пользователей</h3><br/>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Название формы</th>
+                <th>Локация отправителя</th>
+                <th>IP отправителя</th>
+                <th>Сайт с формой</th>
+                <th>Дата отправки</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="request : ${requests}">
+                <td th:text="${request.formName}"></td>
+                <td th:text="${request.location}"></td>
+                <td th:text="${request.userIp}"></td>
+                <td th:text="${request.site?.name}"></td>
+                <td th:text="${#temporals.format(request.createdAt, 'dd.MM.yyyy')}"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

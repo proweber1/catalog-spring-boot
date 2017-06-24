@@ -1,0 +1,126 @@
+.topbar {
+  background: #F45562; }
+
+@media (max-width: 575px) {
+  .topbar {
+    background: #FFF; }
+  .topbar-brand {
+    background: #F45562; } }
+
+.nav-tabs .nav-link::before {
+  background-color: #F45562; }
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: #F45562; }
+
+.nav-pills .nav-link.active,
+.nav-pills .nav-item.show .nav-link {
+  background-color: #F45562; }
+
+.page-item.active .page-link {
+  background-color: #F45562;
+  border-color: #F45562; }
+
+.breadcrumb-item.active {
+  color: #F45562; }
+
+.dropdown-item.active, .dropdown-item:active {
+  background-color: #F45562; }
+
+.bootstrap-datetimepicker-widget table td.day:hover, .bootstrap-datetimepicker-widget table td.hour:hover, .bootstrap-datetimepicker-widget table td.minute:hover, .bootstrap-datetimepicker-widget table td.second:hover {
+  background-color: #F45562; }
+
+.bootstrap-datetimepicker-widget table td.active, .bootstrap-datetimepicker-widget table td.active:hover,
+.bootstrap-datetimepicker-widget table td span.active {
+  box-shadow: inset 0 0 0 2px #F45562; }
+
+.ranges li.active, .ranges li:hover {
+  background-color: #F45562; }
+
+.daterangepicker td.available:hover,
+.daterangepicker th.available:hover {
+  box-shadow: inset 0 0 0 2px #F45562; }
+
+.daterangepicker td.in-range {
+  background-color: #F45562; }
+  .daterangepicker td.in-range.available {
+    box-shadow: inset 0 1px 0 #FFF, inset 0 -1px 0 #FFF; }
+
+.daterangepicker td.active, .daterangepicker td.active:hover {
+  background-color: #F45562 !important;
+  box-shadow: inset 0 1px 0 #FFF, inset 0 -1px 0 #FFF; }
+
+.ms-container .ms-selectable li.ms-hover,
+.ms-container .ms-selection li.ms-hover {
+  background-color: #F45562; }
+
+.wizard > .steps .current a, .wizard > .steps .current a:hover, .wizard > .steps .current a:active {
+  background-color: #F45562; }
+
+.wizard > .steps .done a, .wizard > .steps .done a:hover, .wizard > .steps .done a:active {
+  background-color: #fcccd0; }
+
+.wizard > .actions a, .wizard > .actions a:hover, .wizard > .actions a:active {
+  border: 1px solid #F45562;
+  background-color: #F45562;
+  box-shadow: 0 0 10px 2px rgba(244, 85, 98, 0.2); }
+
+.tabcontrol > .steps > ul > li > a::before {
+  background-color: #F45562; }
+
+.tabcontrol > .steps > ul > li.current > a {
+  color: #F45562; }
+
+table.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child:before, table.dataTable.dtr-inline.collapsed > tbody > tr > th:first-child:before {
+  border: 1px solid #F45562;
+  color: #F45562; }
+
+table.dataTable tbody > tr.selected, table.dataTable tbody > tr > .selected {
+  background-color: #F45562; }
+
+.fc-state-default {
+  color: #F45562;
+  border: 1px solid #F45562; }
+
+.fc-state-active {
+  background-color: #F45562;
+  color: #FFF; }
+
+.sk-rotating-plane {
+  background-color: #F45562; }
+
+.sk-double-bounce .sk-child {
+  background-color: #F45562; }
+
+.sk-wave .sk-rect {
+  background-color: #F45562; }
+
+.sk-wandering-cubes .sk-cube {
+  background-color: #F45562; }
+
+.sk-spinner-pulse {
+  background-color: #F45562; }
+
+.sk-chasing-dots .sk-child {
+  background-color: #F45562; }
+
+.sk-three-bounce .sk-child {
+  background-color: #F45562; }
+
+.sk-circle .sk-child::before {
+  background-color: #F45562; }
+
+.sk-cube-grid .sk-cube {
+  background-color: #F45562; }
+
+.sk-fading-circle .sk-circle::before {
+  background-color: #F45562; }
+
+.sk-folding-cube .sk-cube::before {
+  background-color: #F45562; }
+
+.chat-item.other .chat-text {
+  background-color: #F45562; }
+
+/*# sourceMappingURL=red-skin.css.map */

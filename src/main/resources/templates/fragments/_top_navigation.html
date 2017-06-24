@@ -1,0 +1,234 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head></head>
+<body>
+<!-- Topbar start-->
+<nav class="topbar" th:fragment="navigation">
+    <div class="search-bar closed">
+        <form class="w-100 ml-4 mr-4">
+            <div class="input-group input-group-lg">
+                <input class="form-control form-control-transparent" type="text"
+                       placeholder="Search for something..."><span class="input-group-btn">
+              <button class="btn btn-transparent search-bar-toggle" type="button"><i
+                      class="ti-close"></i></button></span>
+            </div>
+        </form>
+    </div>
+    <a class="topbar-brand" href=""><img class="topbar-logo" src="../build/images/logo/logo-light.png"
+                                         alt="Dumma - Bootstrap 4 Admin Template"></a>
+    <div class="topbar-content">
+        <div class="topbar-left"><a class="hamburger-menu topbar-bubble hidden-md-up" href="javascript:;" role="button"><span
+                class="content"></span><span class="badge badge-pill badge-danger">2</span></a>
+            <form class="search-form hidden-sm-down">
+                <div class="form-group has-icon mb-0">
+                    <input class="form-control form-control-rounded form-control-transparent" type="text"
+                           placeholder="Search for something..."><i class="ti-search form-control-icon"></i>
+                </div>
+            </form>
+        </div>
+        <div class="topbar-right">
+            <ul class="topbar-notification list-unstyled mb-0">
+                <li class="hidden-md-up mr-0"><a class="topbar-icon search-bar-toggle" href="javascript:;"
+                                                 role="button"><i class="ti-search"></i></a></li>
+                <li class="dropdown"><a class="topbar-icon dropdown-toggle no-caret topbar-bubble"
+                                        id="dropdownNotifications" href="#" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false"><i class="ti-bell"></i><span
+                        class="badge badge-pill badge-success">6</span></a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0"
+                         aria-labelledby="dropdownNotifications" data-dropdown-in="fadeInUp"
+                         data-dropdown-out="fadeOutDown">
+                        <h6 class="dropdown-header border-bottom lh-1 pt-5 pb-5 text-center">You have 6
+                            notifications</h6>
+                        <div class="list-group list-group-lg list-group-border-0 list-group-rounded-0 mCustomScrollbar"
+                             data-mcs-theme="minimal-dark">
+                            <div class="row no-gutters">
+                                <div class="col-md-12 col-sm-6 col-12"><a class="list-group-item list-group-item-action"
+                                                                          href="javascript:;"><img
+                                        class="mo-lg rounded-circle mr-4" src="../build/images/users/18.png" alt="">
+                                    <div class="d-flex flex-column align-items-start flex-1 mw-1">
+                                        <div class="d-flex justify-content-between w-100 mb-3">
+                                            <h6 class="mb-0 lh-1 text-truncate mr-2">Screenshot captured</h6>
+                                            <time class="small text-muted lh-1 text-nowrap" datetime="2017-01-01 00:00">
+                                                Just now
+                                            </time>
+                                        </div>
+                                        <p class="text-muted mb-0 w-100 lh-1 text-truncate">[Screenshot.jpg] Touch to
+                                            view your screenshot</p>
+                                    </div>
+                                </a></div>
+                                <div class="col-md-12 col-sm-6 col-12"><a class="list-group-item list-group-item-action"
+                                                                          href="javascript:;"><i
+                                        class="ti-comment-alt mo-lg rounded-circle bg-success text-white text-center mr-4"></i>
+                                    <div class="d-flex flex-column align-items-start flex-1 mw-1">
+                                        <div class="d-flex justify-content-between w-100 mb-3">
+                                            <h6 class="mb-0 lh-1 text-truncate mr-2">Evernote</h6>
+                                            <time class="small text-muted lh-1 text-nowrap" datetime="2017-01-01 00:00">
+                                                16 mins ago
+                                            </time>
+                                        </div>
+                                        <p class="text-muted mb-0 w-100 lh-1 text-truncate">Sign in on your mobile
+                                            device</p>
+                                    </div>
+                                </a></div>
+                                <div class="col-md-12 col-sm-6 col-12"><a class="list-group-item list-group-item-action"
+                                                                          href="javascript:;"><span
+                                        class="mo-lg rounded-circle bg-primary text-white text-center mr-4 fw-700">Ja</span>
+                                    <div class="d-flex flex-column align-items-start flex-1 mw-1">
+                                        <div class="d-flex justify-content-between w-100 mb-3">
+                                            <h6 class="mb-0 lh-1 text-truncate mr-2">Jason Grant commented on your
+                                                post</h6>
+                                            <time class="small text-muted lh-1 text-nowrap" datetime="2017-01-01 00:00">
+                                                2 hours ago
+                                            </time>
+                                        </div>
+                                        <p class="text-muted mb-0 w-100 lh-1 text-truncate">Easy Steps To Better Icon
+                                            Design</p>
+                                    </div>
+                                </a></div>
+                                <div class="col-md-12 col-sm-6 col-12"><a class="list-group-item list-group-item-action"
+                                                                          href="javascript:;">
+                                    <div class="bubble mr-4"><img class="mo-lg rounded-circle"
+                                                                  src="../build/images/users/02.png" alt=""><span
+                                            class="status bg-danger"></span></div>
+                                    <div class="d-flex flex-column align-items-start flex-1 mw-1">
+                                        <div class="d-flex justify-content-between w-100 mb-3">
+                                            <h6 class="mb-0 lh-1 text-truncate mr-2">Austin Gilbert</h6>
+                                            <time class="small text-muted lh-1 text-nowrap" datetime="2017-01-01 00:00">
+                                                Yesterday
+                                            </time>
+                                        </div>
+                                        <p class="text-muted mb-0 w-100 lh-1 text-truncate">How To Build And Develop
+                                            Websites With Gulp</p>
+                                    </div>
+                                </a></div>
+                                <div class="col-md-12 col-sm-6 col-12"><a class="list-group-item list-group-item-action"
+                                                                          href="javascript:;"><i
+                                        class="ti-email mo-lg rounded-circle bg-danger text-white text-center mr-4"></i>
+                                    <div class="d-flex flex-column align-items-start flex-1 mw-1">
+                                        <div class="d-flex justify-content-between w-100 mb-3">
+                                            <h6 class="mb-0 lh-1 text-truncate mr-2">10 new messages</h6>
+                                            <time class="small text-muted lh-1 text-nowrap" datetime="2017-01-01 00:00">
+                                                3 days ago
+                                            </time>
+                                        </div>
+                                        <p class="text-muted mb-0 w-100 lh-1 text-truncate">jerry_willis@gmail.com</p>
+                                    </div>
+                                </a></div>
+                                <div class="col-md-12 col-sm-6 col-12"><a class="list-group-item list-group-item-action"
+                                                                          href="javascript:;"><span
+                                        class="mo-lg rounded-circle bg-info text-white text-center mr-4 fw-700">Ma</span>
+                                    <div class="d-flex flex-column align-items-start flex-1 mw-1">
+                                        <div class="d-flex justify-content-between w-100 mb-3">
+                                            <h6 class="mb-0 lh-1 text-truncate mr-2">Maria Bowman</h6>
+                                            <time class="small text-muted lh-1 text-nowrap" datetime="2017-01-01 00:00">
+                                                3 days ago
+                                            </time>
+                                        </div>
+                                        <p class="text-muted mb-0 w-100 lh-1 text-truncate">Sent you a new email</p>
+                                    </div>
+                                </a></div>
+                            </div>
+                        </div>
+                        <a class="d-block border-top pt-5 pb-5 text-center" href="javascript:;">
+                            <h6 class="mb-0 lh-1">See all notifications</h6></a>
+                    </div>
+                </li>
+                <li class="dropdown"><a class="topbar-icon dropdown-toggle no-caret topbar-bubble"
+                                        id="dropdownDownloading" href="#" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false"><i class="ti-zip"></i><span
+                        class="badge badge-pill badge-danger">4</span></a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0"
+                         aria-labelledby="dropdownDownloading" data-dropdown-in="fadeInUp"
+                         data-dropdown-out="fadeOutDown">
+                        <h6 class="dropdown-header border-bottom lh-1 pt-5 pb-5 text-center">You have 4 file
+                            downloads</h6>
+                        <div class="list-group list-group-lg list-group-border-0 list-group-rounded-0 mCustomScrollbar"
+                             data-mcs-theme="minimal-dark">
+                            <div class="row no-gutters">
+                                <div class="col-md-12 col-sm-6 col-12"><a
+                                        class="list-group-item list-group-item-action flex-column align-items-start"
+                                        href="javascript:;">
+                                    <div class="d-flex justify-content-between w-100 mb-3">
+                                        <h6 class="mb-0 lh-1 text-truncate mr-2">omega_v_1_0.zip</h6>
+                                        <small class="text-muted lh-1 text-nowrap">~28.6 MB</small>
+                                    </div>
+                                    <div class="progress progress-sm w-100">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary"
+                                             role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0"
+                                             aria-valuemax="100"></div>
+                                    </div>
+                                </a></div>
+                                <div class="col-md-12 col-sm-6 col-12"><a
+                                        class="list-group-item list-group-item-action flex-column align-items-start"
+                                        href="javascript:;">
+                                    <div class="d-flex justify-content-between w-100 mb-3">
+                                        <h6 class="mb-0 lh-1 text-truncate mr-2">alpha_v_1_0.zip</h6>
+                                        <small class="text-muted lh-1 text-nowrap">~12.4 MB</small>
+                                    </div>
+                                    <div class="progress progress-sm w-100">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                                             role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
+                                             aria-valuemax="100"></div>
+                                    </div>
+                                </a></div>
+                                <div class="col-md-12 col-sm-6 col-12"><a
+                                        class="list-group-item list-group-item-action flex-column align-items-start"
+                                        href="javascript:;">
+                                    <div class="d-flex justify-content-between w-100 mb-3">
+                                        <h6 class="mb-0 lh-1 text-truncate mr-2">sigma_v_1.1.zip</h6>
+                                        <small class="text-muted lh-1 text-nowrap">~15.8 MB</small>
+                                    </div>
+                                    <div class="progress progress-sm w-100">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+                                             role="progressbar" style="width: 20%;" aria-valuenow="20" aria-valuemin="0"
+                                             aria-valuemax="100"></div>
+                                    </div>
+                                </a></div>
+                                <div class="col-md-12 col-sm-6 col-12"><a
+                                        class="list-group-item list-group-item-action flex-column align-items-start"
+                                        href="javascript:;">
+                                    <div class="d-flex justify-content-between w-100 mb-3">
+                                        <h6 class="mb-0 lh-1 text-truncate mr-2">delta_v_1_7.zip</h6>
+                                        <small class="text-muted lh-1 text-nowrap">~16.1 MB</small>
+                                    </div>
+                                    <div class="progress progress-sm w-100">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-purple"
+                                             role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0"
+                                             aria-valuemax="100"></div>
+                                    </div>
+                                </a></div>
+                            </div>
+                        </div>
+                        <a class="d-block border-top pt-5 pb-5 text-center" href="javascript:;">
+                            <h6 class="mb-0 lh-1">See all file downloads</h6></a>
+                    </div>
+                </li>
+                <li class="dropdown hidden-md-down"><a class="topbar-icon dropdown-toggle no-caret p-4 w-auto"
+                                                       id="dropdownProfile" href="#" data-toggle="dropdown"
+                                                       aria-haspopup="true" aria-expanded="false">
+                    <div class="media">
+                        <div class="bubble d-flex mr-4"><img class="mo-md rounded-circle"
+                                                             src="../build/images/users/05.png" alt=""><span
+                                class="status bg-success"></span></div>
+                        <div class="media-body align-self-center">
+                            <h6 class="mb-0">Hi, Joseph</h6>
+                        </div>
+                    </div>
+                </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownProfile"
+                         data-dropdown-in="fadeInUp" data-dropdown-out="fadeOutDown"><a class="dropdown-item"
+                                                                                        href="javascript:;"><i
+                            class="ti-user mr-3"></i>Profile</a><a class="dropdown-item" href="javascript:;"><i
+                            class="ti-archive mr-3"></i>Inbox</a><a class="dropdown-item" href="javascript:;"><i
+                            class="ti-settings mr-3"></i>Settings</a><a class="dropdown-item" href="javascript:;"><i
+                            class="ti-power-off mr-3"></i>Logout</a></div>
+                </li>
+                <li><a class="right-sidebar-toggle topbar-icon topbar-bubble" href="javascript:;" role="button"><i
+                        class="ti-layout-sidebar-right"></i><span class="dot"></span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Topbar end-->
+</body>
+</html>
